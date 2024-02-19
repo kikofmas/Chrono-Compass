@@ -1,0 +1,8 @@
+name,start_time,end_time,category
+Sleep,02:00,09:00,Sleep
+IT,19:00,20:00,Other
+Work,11:00,14:00,Work
+Work,15:00,19:00,Work
+Meeting,14:30,15:00,Meeting
+Lunch,14:00,14:30,Food
+Dinner,20:00,20:30,Food

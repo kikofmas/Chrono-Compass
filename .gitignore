@@ -225,3 +225,4 @@ CMakeLists.txt.user*
 *.dll
 *.exe
 
+sound.wav
