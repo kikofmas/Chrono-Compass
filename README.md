@@ -16,13 +16,15 @@ pip install -r requirements.txt
 
 # How to use
 
-You can run *main.py* as a python script or build an executable (see below). Use the .csv files inside the *week_schedules/* folder to insert your events. The philosophy for this app is that daily schedules start/end when you wake up/go to sleep and not at midnight. This means that, by default, days "start" at 06:00. For example, an event occurring at 02:00 on a Tuesday should be inserted on Monday's .csv.
+You can run `main.py` as a python script or build an executable (see below). Use the .csv files inside the `week_schedules/` folder to insert your events. The philosophy for this app is that daily schedules start/end when you wake up/go to sleep and not at midnight. This means that, by default, days "start" at 06:00. For example, an event occurring at 02:00 on a Tuesday should be inserted on Monday's schedule.
 
-If you want a sound to play, just copy a .wav file named *sound.wav* inside the directory where *main.py* (or the executable if you're using that) is. I don't include one due to copyright concerns.
+The .csv have the following format: `name,start_time,end_time,category`. The categories can be changed by changing the `CATEGORY_COLORS` dictionary. By default, the available categories are: "Work", "Meeting", "Exercise", "Food", "Duties", "Other" and "Sleep". When a category found in the schedule is not present on the dictionary, it defaults to "Other".
+
+If you want a sound to play, just copy a .wav file named `sound.wav` inside the directory where `main.py` (or the executable if you're going that route) is. I don't include one due to copyright concerns.
 
 # Create an executable
 
-## Using cx_freeze
+## Using cx_Freeze (Recommended)
 
 First install [cx_Freeze](https://github.com/marcelotduarte/cx_Freeze). If you use Python 3.12, you have to use the development build.
 
@@ -54,7 +56,7 @@ Then build the executable.
 pyinstaller --clean --windowed --name "Chrono-Compass" --icon _internal/icon.ico --add-data ./_internal/icon.png:. --add-data ./_internal/play.png:. --add-data ./_internal/pause.png:. --add-data ./_internal/reset.png:. --add-data week_schedules/:./week_schedules/ main.py
 ```
 
-Finally, copy the *week_schedules/* into the created *Chrono-Compass/* inside *dist/*.
+Finally, copy the `week_schedules/` into the created `Chrono-Compass/` inside `dist/`.
 
 # License
 
