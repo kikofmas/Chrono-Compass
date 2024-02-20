@@ -1,4 +1,8 @@
 name,start_time,end_time,category
-Mimir,18:00,20:00,Sleep
-Mimir,17:00,18:00,Other
-Mimir,22:00,23:00,Work
+Sleep,01:30,10:30,Sleep
+Breakfast,10:50,11:15,Food
+Lunch,15:30,16:30,Food
+Dinner,21:30,22:30,Food
+Work-out,10:00,10:30,Exercise
+Work,11:15,15:30,Work
+Work,16:30,20:30,Work
