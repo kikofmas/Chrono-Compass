@@ -809,8 +809,7 @@ class PomodoroTimerWidget(QWidget):
         painter.drawText(
             pieRect,
             Qt.AlignmentFlag.AlignCenter,
-            f"{ \
-                minutes:02d}:{seconds:02d}",
+            f"{minutes:02d}:{seconds:02d}",
         )
 
 

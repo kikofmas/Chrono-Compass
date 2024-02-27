@@ -4,7 +4,7 @@ from cx_Freeze import setup, Executable
 # Dependencies are automatically detected, but it might need fine tuning.
 build_exe_options = {
     "packages": ["numpy", "PyQt6", "datetime"],
-    "include_files": [("./_internal/", "_internal/"), ("./week_schedules/", "week_schedules/"), ("./sound.wav", "sound.wav")],
+    "include_files": [("./_internal/", "_internal/"), ("./week_schedules/", "week_schedules/"), ("./sound.wav", "sound.wav"), ("./startApp.sh", "startApp.sh")],
     #"include_files": [("./_internal/", "_internal/"), ("./week_schedules/", "week_schedules/")],
     "optimize": 1,
 }
